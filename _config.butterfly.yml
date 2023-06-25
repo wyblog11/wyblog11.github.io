@@ -659,10 +659,10 @@ preloader: false
 # --------------------------------------
 
 aside:
-  enable: false
+  enable: true
   hide: false
   button: true
-  mobile: false # display on mobile
+  mobile: true # display on mobile
   position: right # left or right
   card_author:
     enable: true
@@ -671,7 +671,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: ' Follow Me'
-      link: https://github.com/2X-ercha
+      link: https://github.com/wyblog11
   card_announcement:
     enable: true
     content: "禁止盗站以及未标明作者和原帖地址的转载<br>禁止盗站以及未标明作者和原帖地址的转载<br>禁止盗站以及未标明作者和原帖地址的转载<br>(重复3遍以示郑重)"

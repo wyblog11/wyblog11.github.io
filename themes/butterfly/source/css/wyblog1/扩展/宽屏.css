@@ -23,3 +23,6 @@
  .gallery-group {
      width: calc(33% - 8px)!important;
  }
+.layout.hide-aside{ 
+    max-width: 1400px; 
+}

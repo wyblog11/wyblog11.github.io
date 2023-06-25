@@ -7,21 +7,21 @@
 #   name: link || icon
 
 menu:
-  甜瓜待摘 || icon-xigua1:
-    教程分享: /tags/Course/ || icon-jiaocheng
-    自制项目: /tags/Project/ || icon-xiangmu
-  种瓜日记 || icon-miao:
-    搓搓C++: /tags/C/ || icon-colorful-code
-    玩玩爬虫: /tags/Python/ || icon-colorful-code
-    摸摸前端: /tags/html/ || icon-colorful-code
-  生活日常 || icon-tea:
-    友情链接: /link/ || icon-pengyou
-    随便说说: https://memos.noionion.cn/ || icon-pengyouquanzhushou2x
-    留言信箱: /messageboard/ || icon-shuoshuo-
-    # 网站收录:
-  猹的哔哔 || icon-liuyan:
-    贰猹随笔: /tags/Diary/ || icon-tubiaozhizuomoban-
-    猹的自述: /about/ || icon-xinfeng
+  文章 || icon-xiegenjin:
+    归档: /archives/ || icon-shoujianxiang
+    分类: /categories/ || icon-shoujianxiang
+    标签: /tags/ || icon-sekuaibiaoqian
+  社交 || icon-shejiao:
+    友链: /links/ || icon-pengyou
+    友圈: /friendcircle/ || icon-iconfontzhizuobiaozhunbduan36
+    即刻短文: /memos/ || iconfont icon-shejiao
+  关于 || icon-geren:
+    短文: /ispeak/ || icon-xiegenjin
+    关于: /about/ || icon-geren
+    音乐: /music/ || icon-yinle
+  小功能 || icon-gengduo:  
+    报纸: https://news.wyblog1.tk/ || icon-xinwen
+    木鱼: /muyu/ || icon-muyu1
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -860,15 +860,23 @@ css_prefix: true
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
-    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script>LA.init({id:"Jws8lO85zPmXkSKj",ck:"Jws8lO85zPmXkSKj"})</script>
+    - <script src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script>
+    - <script src="https://cdn1.tianli0.top/gh/wyblog11/cdn@main/npm/element-ui/index.js"></script>
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css">
+    - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     # - <link rel="stylesheet" href="/css/custom.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script async src="//at.alicdn.com/t/font_2749059_1lswi5j6yqg.js"></script>
+    - <script async src="https://at.alicdn.com/t/c/font_2749059_1lswi5j6yqg.js"></script>
+    - <script async src="https://cdn1.tianli0.top/gh/wyblog11/cdn@main/iconfont/font_3895868_wuz1sa9y8o.js"></script>
+    - <script src="https://at.alicdn.com/t/c/font_3570527_dthoqrrv2tv.js"></script>
+    - <script src="/js/add/F12和复制提醒.js"></script>
     - <script src="/js/add/nav.js"></script>
     - <script src="/js/add/leftsidemenu.js"></script>
     # - <script src="https://cdn1.tianli0.top/gh/fz6m/lamu-leimu-button@1.2/dist/lamu-leimu.min.js"></script> # 拉姆雷姆角标参考
@@ -978,3 +986,183 @@ tag_plugins:
 
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
 flink_style: flexcard # butterfly | volantis | flexcard
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: Ubuntu指南
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
+    - descr: 玩转Win10
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
+    - descr: 长篇小说连载
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
+    - descr: 个人日记
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
+    - descr: 诗词歌赋
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
+    - descr: 杂谈教程
+      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card/lib/categorybar.css
+
+swiper:
+    enable: true # 开关
+    randomenable: true # 创造力开关
+    priority: 5 #过滤器优先权
+    enable_page: / # 应用页面
+    timemode: date #date/updated
+    layout: # 挂载容器类型
+      type: id
+      name: home_top
+      index: 1
+    category:
+      - name: 前端
+        path: /categories/前端/
+        shadow: var(--marcus-shadow-blue)
+        class: blue
+        icon: fas fa-dove
+      - name: 中学
+        path: /categories/中学/
+        shadow: var(--marcus-shadow-red)
+        class: red
+        icon: fas fa-burn
+      - name: 生活
+        path: /categories/生活/
+        shadow: var(--marcus-shadow-green)
+        class: green
+        icon: fas fa-book
+    above_title: 人间值得
+    below_title: 未来可期
+    subtitle: BLOG.MARCUS233.TOP
+    default_descr: 再怎么看我也不知道怎么描述它的啦！
+    swiper_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.css #swiper css依赖
+    swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
+    custom_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiperstyle.min.css # 适配主题样式补丁
+    custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
+    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
+
+#hexo-butterfly-footer-marcus
+#see https://blog.marcus233.top/p/footer.html
+footer_beautify:
+  enable: true
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  layout: # 挂载容器类型
+      type: id
+      name: footer
+      index: 1
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-solid fa-compass
+        link: https://mnblog.flowus.cn/
+        desrc: 个人主页
+        class: out
+      - icon: fa-brands fa-qq
+        link: https://res.abeim.cn/api/qq/?qq=3105950984
+        desrc: 联系QQ
+        class: out
+      - icon: fa-brands fa-weixin
+        link: /wechat/
+        desrc: 联系微信
+        class: in
+      - icon: fa-solid fa-envelope
+        link: mailto:xiaoxin104@outlook.com
+        desrc: 发送邮件
+        class: out
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/wyblog11
+        desrc: Github主页
+        class: out
+      - icon: fa-brands fa-bilibili
+        link: https://space.bilibili.com/1024450661
+        desrc: 哔哩哔哩主页
+        class: out
+      - icon: fa-solid fa-star
+        link: /stars/
+        desrc: 藏宝阁
+        class: in
+      - icon: fa-solid fa-comment
+        link: /message/
+        desrc: 留言
+        class: in
+  footer_logo:
+    enable: true
+    url: https://cdn-us.imgs.moe/2023/04/22/64431dd94e287.jpg
+  footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 直达
+        footer_links: 
+          - text: 藏宝阁
+            link: /stars/
+            class: in
+          - text: 优秀句子
+            link: /sentence/
+            class: in
+          - text: 空间说说
+            link: /memos/
+            class: in
+          - text: 友链订阅
+            link: /fcircle/
+            class: in
+          - text: 切换背景
+            link: /bg/
+            class: in
+      - group_title: 关于
+        footer_links: 
+          - text: 关于我
+            link: /about/
+            class: in
+          - text: RSS订阅
+            link: /atom.xml
+            class: in
+          - text: 我的相册
+            link: /picture/
+            class: in
+      - group_title: 分类
+        footer_links: 
+          - text: 博客相关
+            link: /categories/博客相关
+            class: in
+          - text: 查看全部
+            link: /categories/
+            class: in 
+  footer_friend_links:
+    enable: true
+    number: 5
+  footer_bottom:
+    copyright:
+      enable: true
+      author: 无影博客
+      link: https://wyblog1.tk/
+      time: 2023
+    left:
+      - text: 雨云
+        desrc: 本站CDN支持
+        link: https://rainyun.com/
+      - text: 网盾星球
+        desrc: 本站CDN防护主要提供商:网盾星球
+        link: https://www.netdun.net/
+    right:
+      - text: Hexo
+        desrc: 框架
+        link: https://hexo.io/zh-cn/
+      - text: Butterfly
+        desrc: 主题
+        link: https://butterfly.js.org/
+    runtime:
+      enable: true
+      time: 2023/01/29 00:00:00
+  footer_css: https://cdn1.tianli0.top/gh/wyblog11/wyblog-2@main/source/css/footer.min.css
+  footer_js: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.js

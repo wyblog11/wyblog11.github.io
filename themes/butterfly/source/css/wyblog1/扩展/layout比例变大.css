@@ -1,0 +1,13 @@
+.layout{
+  max-width:1450px;
+}
+.aside-content{
+    max-width:312px;
+    min-width:300px;
+}
+#archive,#page,#category,#tag,#posts{
+    width:100%;
+}
+.page:not(.page.home) .aside-content {
+  display: none;
+}

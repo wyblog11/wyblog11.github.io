@@ -1,0 +1,25 @@
+@media screen and (max-width: 900px){
+     .aside-content{
+         max-width:none!important;
+     }
+ }
+/*分页适配宽屏*/
+ #archive,#category,#tag,#page,#post{
+     width:100%;
+ }
+ .page:not(.page.category.tag.archive) .page:yes(.page.home) .aside-content{
+     display: none;
+ }
+ .flink-list-item{
+     width:calc(100% / 4 - 15px)!important;
+ }
+ @media screen and (max-width: 1250px) {
+     .flink-list-item{
+         width:calc(100% / 3 - 15px)!important;
+     }
+ }
+
+ /*图库宽屏适配*/
+ .gallery-group {
+     width: calc(33% - 8px)!important;
+ }

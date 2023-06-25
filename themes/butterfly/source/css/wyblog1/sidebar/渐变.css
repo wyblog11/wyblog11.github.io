@@ -1,0 +1,8 @@
+#sidebar
+  #sidebar-menus
+    background: linear-gradient(60deg, #ffd7e4 0%, #c8f1ff 100%)
+
+[data-theme="dark"]
+  #sidebar
+    #sidebar-menus
+      background: linear-gradient(60deg, #2c0c16 0%, #043749 100%)

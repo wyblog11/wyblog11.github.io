@@ -1,0 +1,15 @@
+#sidebar
+  #sidebar-menus
+    .simply-cha-top
+      margin: 0 0 -3rem 0
+      height: 4rem
+      background: url("/img/simplycha-top.png")
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: 100% 0%
+    .simply-cha
+      margin-top: -4rem
+      height: 5rem
+      background: url("/img/simplycha.png")
+      background-size: contain
+      background-repeat: no-repeat

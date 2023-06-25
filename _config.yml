@@ -7,19 +7,16 @@ title: 贰猹の小窝
 subtitle: '奋力奔跑，去追心中的那一道光'
 description: '欢迎光临小窝！'
 keywords:
-author: noionion
+author: 无影博客
 language: zh-CN
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://noionion.top
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://wyblog1.tk/
 root: /
-permalink: :abbrlink.html
+permalink: /post/:title/
 permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -104,7 +101,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:2X-ercha/2X-ercha.github.io.git
+  repo: git@github.com:wyblog11/wyblog11.github.io.git
   branch: master
 
 #aplayer

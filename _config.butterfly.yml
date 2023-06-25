@@ -873,7 +873,7 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script async src="https://at.alicdn.com/t/c/font_2749059_1lswi5j6yqg.js"></script>
+    - <script async src="https://at.alicdn.com/t/font_2749059_1lswi5j6yqg.js"></script>
     - <script async src="https://cdn1.tianli0.top/gh/wyblog11/cdn@main/iconfont/font_3895868_wuz1sa9y8o.js"></script>
     - <script src="https://at.alicdn.com/t/c/font_3570527_dthoqrrv2tv.js"></script>
     - <script src="/js/add/F12和复制提醒.js"></script>

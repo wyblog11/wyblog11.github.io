@@ -1,0 +1,93 @@
+/* 首页轮播 */
+
+#bber-talk,
+#bber-talk a {
+    color: var(--font-color);
+}
+
+#bber-talk {
+    cursor: pointer;
+    width: 100%;
+    min-height: 50px;
+    background: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#bber-talk .item i {
+    margin-left: 5px;
+}
+
+#bber-talk>i {
+    font-size: 1.1rem;
+}
+
+#bber-talk .talk-list {
+    max-height: 32px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#bber-talk .talk-list :hover {
+    color: #49b1f5 !important;
+    transition: all .2s ease-in-out;
+}
+
+#bber-talk .talk-list li {
+    list-style: none;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#bber-talk .bber-icon {
+    line-height: 25px;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+#bber-talk .pass {
+    -webkit-animation: 1s passing infinite;
+    animation: 1s passing infinite;
+}
+
+@-webkit-keyframes passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+
+@keyframes passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}

@@ -9,5 +9,5 @@
   width: 100%;
 }
 .page:not(.page.home) .aside-content {
-  display: none;
+  /* display: none; */
 }

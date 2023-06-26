@@ -39,7 +39,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
-          repository-name: wyblog11/wyblog11.github.io
-          branch: master
+          repository-name: 612901/612901.github.io
+          branch: main
           folder: public
           commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'

@@ -41,7 +41,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
-          repository-name: yxlr123/yxlr123.github.io
-          branch: blog
+          repository-name: wyblog11/wyblog11.github.io
+          branch: gh-page
           folder: public
           commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'

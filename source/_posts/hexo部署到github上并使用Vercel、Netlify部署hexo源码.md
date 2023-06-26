@@ -99,23 +99,9 @@ deploy:
 repository修改为你自己的github项目地址即可，就是部署时，告诉工具，将生成网页通过git方式上传到你对应的链接仓库中。
 
 ```Bash
-hexo-deployer-git: '^',
+"hexo-deployer-git": "^3.0.0",
 ```
 
-然后
-
-```Bash
-hexo chean
-hexo g
-hexo d
-```
-
-其中`hexo clean`清除了你之前生成的东西，也可以不加。`hexo g`生成静态文章，`hexo d`部署文章。
-
-> 注意`hexo d`时可能要你输入`username`和`password`。
-
-得到下图就说明部署成功了，过一会儿就可以在[https://yourname.github.io](https://yourname.github.io) 这个网站看到你的博客了！！
-![部署成功](https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png)
 
 ## 写文章、发布文章
 
@@ -159,3 +145,11 @@ pretty_urls:
 ## 更多玩法
 
 ### 更改主题
+```Yml
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+```
+
+得到下图就说明部署成功了，过一会儿就可以在[https://yourname.github.io](https://yourname.github.io) 这个网站看到你的博客了！！
+![部署成功](https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png)

@@ -19,7 +19,6 @@
   width:1200px!important;
 }
 .page #page:not(.home #page),.page #tag,.page #archive,.page #category{
-    background: transparent!important;
     border: none!important;
     box-shadow: none!important;
     padding-top: 0;

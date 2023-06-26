@@ -1341,10 +1341,6 @@ danger 提示塊標籤
 default 提示塊標籤
 {% endnote %}
 
-{% note primary flat %}
-primary 提示塊標籤
-{% endnote %}
-
 {% note success flat %}
 success 提示塊標籤
 {% endnote %}

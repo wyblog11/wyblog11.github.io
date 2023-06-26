@@ -1,4 +1,6 @@
 #loading-box(onclick='document.getElementById("loading-box").classList.add("loaded")')
   .loading-bg
-    div.loading-img
+    img.loading-img(class='nolazyload' src=loading_img ? url_for(loading_img) : "https://img01.anheyu.com/useruploads/110/2023/04/03/642a735c50e6d.jpg")
     .loading-image-dot
+    #loading-percentage
+      | 0%

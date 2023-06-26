@@ -22,7 +22,11 @@ swiper_index: 6 #置顶轮播图顺序，需填非负整数，数字越大越靠
 #### 3.打开shell，右键粘贴以下命令,回车
 
 ```shell
-git clone https://github.com/ning0818/artalk-replit && mv -b artalk-replit/* ./ && mv -b artalk-replit/.[^.]* ./ && rm -rf *~ && rm -rf artalk-replit
+git clone https://github.com/ning0818/artalk-replit 
+mv -b artalk-replit/* ./ 
+mv -b artalk-replit/.[^.]* ./ 
+rm -rf *~ 
+rm -rf artalk-replit
 ```
 
 ![https://image.yuanning0818.tk/1687340901678.png](https://image.yuanning0818.tk/1687340901678.png)

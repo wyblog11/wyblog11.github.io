@@ -21,5 +21,4 @@
 .page #page:not(.home #page),.page #tag,.page #archive,.page #category{
     border: none!important;
     box-shadow: none!important;
-    padding-top: 0;
 }

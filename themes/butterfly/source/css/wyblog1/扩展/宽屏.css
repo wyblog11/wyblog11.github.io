@@ -1,5 +1,5 @@
 .layout.hide-aside{ 
-    max-width: 1400px; 
+    max-width:1400px; 
 }
 /* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
 #archive,
@@ -10,4 +10,11 @@
 }
 .page:not(.page.home) .aside-content {
   /* display: none; */
+}
+.aside-content{
+    max-width:312px;
+    min-width:300px;
+}
+.recent-posts{
+  width:1200px;
 }

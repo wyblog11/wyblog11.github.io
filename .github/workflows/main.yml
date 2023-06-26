@@ -28,8 +28,8 @@ jobs:
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}    # 这个就是Source仓库的私钥
         run: |
-          git config --global user.email "dbh2858304517@gmail.com"
-          git config --global user.name "yxlr123"
+          git config --global user.email "3227988255@qq.com"
+          git config --global user.name "wyblog11"
           npm install yarn hexo gulp -g
           yarn
           hexo g
@@ -39,7 +39,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
-          repository-name: yxlr123/blog
-          branch: main
+          repository-name: wyblog11/wyblog11.github.io
+          branch: master
           folder: public
           commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'

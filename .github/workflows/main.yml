@@ -20,26 +20,28 @@ jobs:
         uses: actions/checkout@master
 
       # from: https://github.com/actions/setup-node
-      - name: 安装 Node.js 18.x
+      - name: Setup Node.js 14.x
         uses: actions/setup-node@master
         with:
-          node-version: "18.x"
-      - name: 开始部署
+          node-version: "14.x"
+      - name: Setup Deploy
         env:
           HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}    # 这个就是Source仓库的私钥
         run: |
-          git config --global user.email "3227988255@qq.com"
-          git config --global user.name "wyblog11"
-          npm install yarn hexo gulp -g
-          yarn
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.email "dbh2858304517@gmail.com"
+          git config --global user.name "yxlr123"
+          npm install hexo-cli -g
+          npm install
           hexo g
-          hexo algolia
-
-      - name: 部署到blog仓库
+      - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.TOKEN }}
-          repository-name: 612901/612901.github.io
-          branch: main
+          repository-name: yxlr123/yxlr123.github.io
+          branch: blog
           folder: public
           commit-message: '${{ github.event.head_commit.message }} Updated By Github Actions'

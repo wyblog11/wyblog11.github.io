@@ -174,7 +174,32 @@ Vercel的注册也很简单，进入vercel.com/signup，由于是国外网站，
 在顶部的文本框输入你的域名，比如wyblog.eu.org，点击Add，这个选择框是让你选择www和根域名的关系（第一个就是输入根域名跳转到www，第二个就是输入www会跳转到根域名，根据你的喜好选择（如果不是www或者根域名就没有提示）），我选择第二个，然后点击Add就行了。
 添加之后它会让你加入A记录或者CNAME记录，按照它的提升添加，Vercel会给你颁发证书，稍等一会即可正常访问了。
 
-开始建站吧！
+### Netlify
+Netlify同样也是一家老牌网站托管商，但是国内常被GFW墙掉，所以不是很建议选择。不过不抽的时候也挺快，有些地区速度不错。
+
+#### 注册
+Netlify的注册托管也很简单，进入app.netlify.com，选择Github登录
+跟Vercel一样，会进入Github的验证界面，按照前面的方式验证。
+接下来它会让你填一些信息，这个可以随便填。
+
+#### 部署
+接下来部署项目，Netlify注册后会自动进入首次部署界面，选择从Import from Git
+选择你的Github源代码对应的仓库
+进入部署选项界面，你会看到它在加载分支。
+不知道是什么bugBugjump：特性！，它会一直加载分支，这时你需要手动点击“Customize build settings”来加载
+加载完后，选项不用改，直接点击Deploy site即可
+不同于vercel，Netlify的首次部署较慢，总之等一等就好了。
+等到部署完成之后，你就可以用 项目名.netlify.app访问站点了，不同的是，Netlify的项目名是自动生成的，就是顶上导航栏的那一个。
+
+#### 更改项目名
+如果你不喜欢这个名字当然也可以更改项目名，进入项目主页-Site settings-General-Site Details，选择右侧的Change Site name，输入自己喜欢的名字，Save即可。
+Netlify也会自动给你颁发R3证书并自动续期，同样每一次hexo d会自动部署到Netlify上面。
+
+#### 绑定自己的域名
+进入项目主页-Site settings-Domain management-domains
+选择Add domain alias，输入你的域名，域名就添加成功了。
+如果你没有预先设置cname的话，就选择域名后面的，然后按照上面的方式把域名解析到上面就好了。
+开始研究你的网站吧！
 
 ## 更多玩法
 

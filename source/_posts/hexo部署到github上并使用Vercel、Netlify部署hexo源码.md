@@ -141,6 +141,7 @@ pretty_urls:
   trailing_index: true # 设置为false时会将末尾的index.html去掉
   trailing_html: true # 设置为false时会将末尾的.html去掉，对index.html无效
 ```
+## 博客部署
 
 ## 更多玩法
 
@@ -151,5 +152,37 @@ pretty_urls:
 theme: butterfly
 ```
 
-得到下图就说明部署成功了，过一会儿就可以在[https://yourname.github.io](https://yourname.github.io) 这个网站看到你的博客了！！
-![部署成功](https://pic.rmb.bdstatic.com/bjh/700c6575d1ccd3056e49e993de712c24.png)
+### 安装插件
+因为我们的博客部署到github上，所以我们可以通过将插件安装**package.json**，那么插件怎么安装到github博客源代码
+```Yml
+    "插件名称": "^插件版本"，
+```
+例如我自己用的package.json
+```Yml
+  "dependencies": {
+    "aplayer": "^1.10.1",
+    "hexo": "^5.0.0",
+    "hexo-abbrlink": "^2.2.1",
+    "hexo-butterfly-swiper-marcus": "^1.0.7",
+    "hexo-butterfly-footer-marcus": "^1.1.3",
+    "hexo-cli": "^4.3.0",
+    "hexo-deployer-git": "^3.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-baidu-sitemap": "^0.1.9",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-search": "^2.4.1",
+    "hexo-generator-sitemap": "^2.1.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-hide-posts": "^0.1.1",
+    "hexo-neat": "^1.0.9",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-server": "^2.0.0",
+    "hexo-tag-aplayer": "^3.0.4",
+    "yamljs": "^0.3.0",
+    "hexo-wordcount": "^6.0.1"
+```

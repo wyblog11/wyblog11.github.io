@@ -1,5 +1,25 @@
+- loading_img = theme.preloader.avatar
+#loading-box(onclick='document.getElementById("loading-box").classList.add("loaded")')
+  .loading-bg
+    img.loading-img(class='nolazyload' src=loading_img ? url_for(loading_img) : "https://img01.anheyu.com/useruploads/110/2023/04/03/642a735c50e6d.jpg")
+    .loading-image-dot
+    #loading-percentage
+      | 0%
 script.
-  var preloader = {
+  const loadingPercentage = document.getElementById("loading-percentage");
+  loadingPercentage.style.color = "black";
+  let loadingPercentageTimer = setInterval(function() {
+    var progressBar = document.querySelector(".pace-progress");
+    if (!progressBar) return
+    var currentValue = progressBar.getAttribute("data-progress-text");
+    if (currentValue !== loadingPercentage.textContent) {
+      loadingPercentage.textContent = currentValue;
+      if (currentValue === "100%") {
+        clearInterval(loadingPercentageTimer);
+      }
+    }
+  }, 100);
+  const preloader = {
     endLoading: () => {
       document.body.style.overflow = 'auto';
       document.getElementById('loading-box').classList.add("loaded")
@@ -7,7 +27,11 @@ script.
     initLoading: () => {
       document.body.style.overflow = '';
       document.getElementById('loading-box').classList.remove("loaded")
-
     }
   }
-  window.addEventListener('load',preloader.endLoading())
+  window.addEventListener('load',()=> { preloader.endLoading() })
+
+  if (!{theme.pjax && theme.pjax.enable}) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }

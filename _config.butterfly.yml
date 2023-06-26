@@ -288,6 +288,7 @@ comments:
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
   - Twikoo
+  - artalk
   # - Valine
   # - Disqus
   text: true # Display the comment name next to the button
@@ -386,7 +387,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.noionion.cn
+  envId: https://twikoo.wyblog1.tk
   region:
   visitor: false
   option:

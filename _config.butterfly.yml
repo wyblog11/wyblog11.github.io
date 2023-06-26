@@ -392,6 +392,14 @@ twikoo:
   visitor: false
   option:
 
+# Artalk
+# https://artalk.js.org/guide/frontend/config.html
+artalk:
+  server: https://artalk-replit.wyblog.repl.co/
+  site: 无影博客
+  visitor: false
+  option:
+
 # Chat Services
 # --------------------------------------
 

@@ -2,7 +2,6 @@
     max-width:1400px; 
 }
 /* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
-#archive,
 #page,
 #category,
 #tag {

@@ -1,5 +1,5 @@
 ---
-title: Butterfly 安裝文檔(六) 進階教程
+title: 【转载】Butterfly 安裝文檔(六) 進階教程
 tags:
   - 教程
   - Hexo

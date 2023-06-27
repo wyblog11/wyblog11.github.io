@@ -1,5 +1,5 @@
 ---
-title: Butterfly 安裝文檔(七) 更新日誌
+title: 【转载】Butterfly 安裝文檔(七) 更新日誌
 date: 2020-05-28 22:41:59
 tags:
   - 教程

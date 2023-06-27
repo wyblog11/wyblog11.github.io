@@ -38,7 +38,9 @@ top_group_index: 7 #右侧磁帖顺序，需填非负整数，数字越大越靠
 官网地址:[https://replit.com/](https://replit.com/)
 
 ### 目前可以部署的有：
-mcsever
-artalk
-memos
+mcsever: [https://github.com/Frazix12/mcpe-replit](https://github.com/Frazix12/mcpe-replit)
+artalk:[https://github.com/ning0818/artalk-replit](https://github.com/ning0818/artalk-replit)
+memos: [https://github.com/sixmillions/memos-replit](https://github.com/sixmillions/memos-replit)
 yesplaymusic
+代理类有很多版本，无法一一写入
+

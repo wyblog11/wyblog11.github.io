@@ -11,7 +11,6 @@ keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-主題問答
 cover: https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png
 abbrlink: 98d20436
-comments: true
 aside: false
 ---
 

@@ -12,7 +12,6 @@ description: Butterfly安裝文檔-進階教程
 cover: https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png
 abbrlink: 4073eda
 date: 2020-05-28 22:39:25
-comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}

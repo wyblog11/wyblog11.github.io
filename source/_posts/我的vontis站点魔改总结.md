@@ -253,7 +253,6 @@ cover:
   ...
 ```
 #### 2.以defer方式引入以下js,注意把里面的诗词改成自己的
-{% folding cyan open, 点开查看配置教程 %}
 ```
 var binft = function (r) {
     var isTransparent = true;

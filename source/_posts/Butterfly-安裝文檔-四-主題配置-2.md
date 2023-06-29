@@ -1,5 +1,6 @@
 ---
 title: 【转载】Butterfly 安裝文檔(四) 主題配置-2
+aside: false
 tags:
   - 教程
   - Hexo

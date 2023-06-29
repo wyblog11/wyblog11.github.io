@@ -16,7 +16,6 @@ description: 我的vontis站点魔改总结
 abbrlink: 13229
 date: 2023-06-28 20:05:10
 swiper_index: 8 #置顶轮播图顺序，需填非负整数，数字越大越靠前
-top_group_index: 8 #右侧磁帖顺序，需填非负整数，数字越大越靠前
 ---
 ## 前言
 {% note red 'fas fa-fan' flat%}温馨提示：在修改源码时注意做好备份处理{% endnote %}

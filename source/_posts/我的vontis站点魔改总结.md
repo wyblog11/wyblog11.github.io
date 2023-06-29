@@ -28,7 +28,6 @@ swiper_index: 8 #置顶轮播图顺序，需填非负整数，数字越大越靠
 
 ### 一.暗黑模式动画
 #### 1.添加DarkMode.js
-{% folding cyan open, 点开查看配置教程 %}
 ```DarkMode.js
 function BackTOP() {
     $("#btn").hide();
@@ -112,9 +111,7 @@ function checkNightMode() {
 BackTOP();
 volantis.dark.push(switchNightMode);
 ```
-{% endfolding %}
 #### 2.添加DarkMode.css
-{% folding cyan open, 点开查看配置教程 %}
 ```
 #RightDownBtn {
     position: fixed;
@@ -245,7 +242,6 @@ volantis.dark.push(switchNightMode);
     background: linear-gradient(#fefefe, #fffbe8)
 }
 ```
-{% endfolding %}
 
 ### 二.首页动态诗词
 #### 1.在volantis的配置文件里修改 subtitle 为"<div id="binft"></div>"
@@ -323,7 +319,6 @@ var binft = function (r) {
 };
 binft(document.getElementById('binft'));
 ```
-{% folding cyan open, 点开查看配置教程 %}
 
 ### 三."Hello World"特效
 #### 1.修改主题配置文件里的标题

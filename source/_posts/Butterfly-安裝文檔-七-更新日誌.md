@@ -1,6 +1,7 @@
 ---
 title: 【转载】Butterfly 安裝文檔(七) 更新日誌
 date: 2020-05-28 22:41:59
+aside: false
 tags:
   - 教程
   - Hexo
@@ -12,7 +13,6 @@ description: Butterfly安裝文檔-更新日誌
 cover: https://file.crazywong.com/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png
 abbrlink: 198a4240
 toc: false
-comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}

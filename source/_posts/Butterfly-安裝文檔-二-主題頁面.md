@@ -13,6 +13,7 @@ description: Butterfly安裝文檔-主題頁面
 cover: https://file.crazywong.com/gh/jerryc127/CDN/img/Butterfly-docs-02-cover.png
 abbrlink: dc584b87
 comments: false
+aside: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}

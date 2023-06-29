@@ -12,7 +12,7 @@
     min-width:300px;
 }
 .recent-posts{
-  width:1200px!important;
+  width:900px!important;
 }
 .page #page:not(.home #page),.page #tag,.page #archive,.page #category{
     border: none!important;

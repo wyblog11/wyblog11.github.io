@@ -27,3 +27,6 @@
 .page:not(.page.home) .aside-content {
   display: none;
 }
+.page:not(.page.post) .aside-content {
+  display: none;
+}

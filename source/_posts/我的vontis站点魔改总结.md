@@ -8,7 +8,7 @@ tags:
   - volantis
   - themes
   - 魔改
-cover: https://images.boysec.cn/cover1.webp
+cover: 
 mathjax: true
 katex: true
 type: post
@@ -20,6 +20,12 @@ top_group_index: 8 #右侧磁帖顺序，需填非负整数，数字越大越靠
 ---
 ## 前言
 {% note red 'fas fa-fan' flat%}温馨提示：在修改源码时注意做好备份处理{% endnote %}
+
+### 魔改前需加入的文件
+#### 1.如果报错 $ is not defined,或其他有关 $ 的错误,很可能是因为你没有jQuery或者jQuery异常,需要自行引用.注意jQuery必须在目标代码之前,最好是第一个引用
+```
+<script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+```
 
 ### 一.暗黑模式动画
 #### 1.添加DarkMode.js
@@ -319,3 +325,39 @@ var binft = function (r) {
 binft(document.getElementById('binft'));
 ```
 {% folding cyan open, 点开查看配置教程 %}
+
+### 三."Hello World"特效
+#### 1.修改主题配置文件里的标题
+```
+############################### Cover ############################### > start
+cover:
+  ...
+  title: '<font><span>Hello</span> <span>World</span></font>'
+  ...
+```
+#### 2.引入以下css样式,推荐添加到 hexo/source/_volantis/style.styl 里
+```
+/* 此处调节字体大小
+.top .title font{
+    font-size: 1em;
+}
+*/
+.top .title span{
+    transition: 0.5s;
+}
+.top .title:hover span:nth-child(1){
+    margin-right: 10px;
+}
+.top .title:hover span:nth-child(2){
+    margin-left: 10px;
+}
+.top .title:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+}
+```

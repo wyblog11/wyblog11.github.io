@@ -1159,9 +1159,9 @@ footer_beautify:
       - text: 雨云
         desrc: 本站CDN支持
         link: https://rainyun.com/
-      - text: 网盾星球
-        desrc: 本站CDN防护主要提供商:网盾星球
-        link: https://www.netdun.net/
+      - text: 慈云数据
+        desrc: 提供CDN服务
+        link: https://www.zovps.com/ 
     right:
       - text: Hexo
         desrc: 框架
